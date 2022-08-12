@@ -1,0 +1,32 @@
+.container{
+    width: 70%;
+}
+.refresh{   
+    margin-bottom : 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.refreshbtn{
+    border: none;
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 115), orange);
+    width: 100px;
+    border-radius: 20px;
+}
+.accordian{
+    width: 90%;
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+}
+.notes{
+    width: 80%;
+    text-align: justify;
+}
+.buttons{
+    width: 16%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
