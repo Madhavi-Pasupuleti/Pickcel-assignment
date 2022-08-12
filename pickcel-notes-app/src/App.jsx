@@ -14,7 +14,11 @@ function App() {
 
   return (
     <div className="App">
-      <img src="https://www.pickcel.com/assets/img/pickcel-logo.svg" alt="" />
+      <ul>
+        <li>
+          <img src="https://www.pickcel.com/assets/img/pickcel-logo.svg" alt="" />
+        </li>
+      </ul>
       <br />
       <AddNotes id={notesId} setNotesId={setNotesId} />
       <br />

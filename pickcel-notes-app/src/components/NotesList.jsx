@@ -28,6 +28,7 @@ function NotesList({ getNotesId }) {
     return (
         <div className='container'>
             <div className='refresh'>
+                <h2>Notes List</h2>
                 <Button className='refreshbtn' onClick={getNotes}>Refresh</Button>
             </div>
             <div className='accodian'> 

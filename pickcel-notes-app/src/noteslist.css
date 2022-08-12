@@ -4,13 +4,13 @@
 .refresh{   
     margin-bottom : 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .refreshbtn{
     border: none;
     background-image: linear-gradient(to bottom right, rgb(255, 0, 115), orange);
     width: 100px;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 .accordian{
     width: 90%;

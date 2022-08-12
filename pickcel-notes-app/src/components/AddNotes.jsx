@@ -2,7 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import {Alert, Button, Form } from 'react-bootstrap';
-import crud_operations from "../crud/crud_operations"
+import crud_operations from "../crud/crud_operations";
+import "../addnotes.css"
 
 function AddNotes({id, setNotesId}) {
     const [title, setTitle] = useState("");
@@ -65,23 +66,23 @@ function AddNotes({id, setNotesId}) {
 
     return (
         <div className="container">
+            <h1>Enter Notes</h1>
             <div>
-            {errormsg?.msg && (
-              <Alert 
-              variant = {errormsg?.error ? "danger" : "success"}
-               dismissible 
-               onClose={() => setErrormsg("")}
-              >
-              {" "}
-              {errormsg?.msg}
-              </Alert>
-              )}
+                {errormsg?.msg && (
+                <Alert 
+                variant = {errormsg?.error ? "danger" : "success"}
+                dismissible 
+                onClose={() => setErrormsg("")}
+                >
+                {" "}
+                {errormsg?.msg}
+                </Alert>
+                )}
             </div>
-            
             
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formNotesTitle">
-                    <Form.Label>Title</Form.Label>
+                    <Form.Label className='title'>Title</Form.Label>
                     <Form.Control 
                         type="text" 
                         placeholder="Notes Title" 
@@ -91,7 +92,7 @@ function AddNotes({id, setNotesId}) {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formNotes">
-                    <Form.Label>Notes</Form.Label>
+                    <Form.Label className='title'>Notes</Form.Label>
                     <Form.Control 
                         type="text" 
                         placeholder="Start Notes" 
@@ -100,7 +101,7 @@ function AddNotes({id, setNotesId}) {
                     />
                 </Form.Group>
                 
-                <Button variant="primary" type="submit">
+                <Button className='createbtn' type="submit">
                     Create
                 </Button>
             </Form>
